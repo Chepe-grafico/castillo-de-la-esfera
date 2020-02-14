@@ -1,0 +1,31 @@
+{{ "<!-- Clients Aside -->" | safeHTML }}
+<aside class="clients">
+  <div class="container">
+    <div class="col-lg-12 text-center">
+      {{ with .Site.Params.clients_list.title }}
+      <h2 class="section-heading">{{ . }}</h2>
+      {{ end }}
+      {{ with .Site.Params.clients_list.subtitle }}
+      <h3 class="section-subheading text-mutedwith ">{{ . }}</h3>
+      {{ end }}
+    </div>
+    <div class="row">
+    </div>
+    <div class="row flexbox{{ if .Site.Params.clients_list.center }} flexbox-center{{ end }}">
+
+      {{ range .Site.Params.clients }}
+      <div class="col-md-3 col-sm-6 col">
+        {{ $url := printf "img/logos/%s" .logo }}
+        {{ if .link }}
+        <a href="{{ .link }}">
+          <img src="{{ $url | absURL }}" class="img-responsive img-centered" alt="">
+        </a>
+        {{ else }}
+        <img src="{{ $url | absURL }}" class="img-responsive img-centered" alt="">
+        {{ end }}
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</aside>

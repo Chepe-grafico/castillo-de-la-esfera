@@ -1,0 +1,26 @@
+<!-- .section -->
+<section class="section is-paddingless-horizontal">
+    <div class="container grid">
+        <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="is-active"><a href="#" aria-current="page">How to build a beautiful blog</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+<!-- /.section -->
+
+<style>
+    .grid{
+        display: grid;
+        grid-template-columns: [xl-start] 1fr [md-start] minmax(0,2fr) [md-end] 1fr [xl-start];
+    }
+    .grid * { grid-column: md; }
+    .grid-xl { grid-column: xl; }
+
+    .is-paddingless-horizontal{
+        padding-left: 0 !important;
+        padding-right: 0 !important; 
+    }
+</style>

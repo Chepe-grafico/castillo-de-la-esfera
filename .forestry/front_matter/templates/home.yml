@@ -1,0 +1,392 @@
+---
+label: Home
+hide_body: true
+fields:
+- type: text
+  name: baseurl
+  label: baseurl
+  hidden: true
+- type: text
+  name: languageCode
+  label: languageCode
+  hidden: true
+- type: text
+  name: title
+  label: title
+- type: text
+  name: theme
+  label: theme
+  hidden: true
+- type: text
+  name: googleAnalytics
+  label: googleAnalytics
+  hidden: true
+- type: field_group
+  name: params
+  label: Secciones
+  fields:
+  - type: text
+    name: name
+    label: Nombre
+    hidden: true
+  - type: text
+    name: description
+    label: Descripción
+  - type: list
+    name: custom_css
+    label: custom_css
+    hidden: true
+  - type: list
+    name: custom_js
+    label: custom_js
+    hidden: true
+  - type: file
+    name: favicon
+    label: favicon
+    hidden: true
+  - type: boolean
+    name: disableFonts
+    label: disableFonts
+    hidden: true
+  - type: field_group
+    name: error404
+    label: Pagina no encontrada
+    fields:
+    - type: text
+      name: heading
+      label: Titulo
+    - type: text
+      name: text
+      label: Texto
+  - type: field_group
+    name: navigation
+    label: Navegacion
+    fields:
+    - type: text
+      name: brand
+      label: Marca
+      hidden: true
+    - type: file
+      name: logo
+      label: Logo
+    - type: text
+      name: services
+      label: Primero
+    - type: text
+      name: portfolio
+      label: Segundo
+    - type: text
+      name: team
+      label: Tercero
+    - type: text
+      name: about
+      label: Cuarto
+    - type: text
+      name: contact
+      label: Quinto
+    description: Texto en el menu superior
+  - type: field_group
+    name: hero
+    label: Carrusel superior
+    fields:
+    - type: field_group_list
+      name: slide
+      label: Cartas
+      fields:
+      - type: text
+        name: title
+        label: Titulo
+      - type: text
+        name: subtitle
+        label: Subtitulo
+      - type: text
+        name: buttonText
+        label: Texto en boton
+      - type: file
+        name: image
+        label: Imagen
+      - type: text
+        name: url
+        label: url
+        hidden: false
+  - type: field_group
+    name: services
+    label: Servicios
+    fields:
+    - type: boolean
+      name: enable
+      label: enable
+      hidden: true
+    - type: text
+      name: title
+      label: Titulo
+    - type: text
+      name: subtitle
+      label: Subtitulo
+    - type: field_group_list
+      name: row
+      label: Fila de Iconos
+      fields:
+      - type: field_group_list
+        name: list
+        label: Iconos
+        fields:
+        - type: text
+          name: title
+          label: Titulo
+        - type: text
+          name: icon
+          label: Icono
+        - type: text
+          name: description
+          label: Descripcion
+        - type: text
+          name: url
+          label: Url
+        - type: text
+          name: class
+          label: Clase
+          hidden: true
+  - type: field_group
+    name: portfolio
+    label: portfolio
+    fields:
+    - type: boolean
+      name: enable
+      label: enable
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: subtitle
+      label: subtitle
+    - type: field_group
+      name: modal
+      label: modal
+      fields:
+      - type: text
+        name: date
+        label: date
+      - type: text
+        name: category
+        label: category
+      - type: text
+        name: buttonText
+        label: buttonText
+    hidden: true
+  - type: field_group
+    name: about
+    label: Nosotros
+    fields:
+    - type: boolean
+      name: enable
+      label: enable
+      hidden: true
+    - type: text
+      name: title
+      label: Titulo
+    - type: text
+      name: subtitle
+      label: Subtitulo
+    - type: field_group_list
+      name: events
+      label: Eventos
+      fields:
+      - type: file
+        name: img
+        label: Imagen
+      - type: text
+        name: title
+        label: Titulo
+      - type: textarea
+        name: description
+        label: Descripción
+      - type: text
+        name: date
+        label: Fecha
+    - type: text
+      name: endpoint
+      label: Mensaje Final
+  - type: field_group
+    name: team
+    label: Sucursales
+    fields:
+    - type: boolean
+      name: enable
+      label: enable
+      hidden: true
+    - type: text
+      name: title
+      label: Titulo
+    - type: text
+      name: subtitle
+      label: Subtitulo
+    - type: textarea
+      name: description
+      label: Descripción
+    - type: field_group_list
+      name: members
+      fields:
+      - type: file
+        name: img
+        label: Imagen
+      - type: text
+        name: name
+        label: Nombre
+      - type: text
+        name: position
+        label: Descripción
+      - type: list
+        name: social
+        label: Botones
+      label: Lista de sucursales
+  - type: field_group
+    name: clients_list
+    label: Clientes
+    fields:
+    - type: boolean
+      name: enable
+      label: enable
+      hidden: true
+    - type: boolean
+      name: center
+      label: center
+      hidden: true
+    - type: text
+      name: title
+      label: Titulo
+    - type: text
+      name: subtitle
+      label: Subtitulo
+  - type: field_group_list
+    name: clients
+    label: Lista de Clientes
+    fields:
+    - type: file
+      name: logo
+      label: Logo
+    - type: text
+      name: link
+      label: Link
+  - type: field_group
+    name: contact
+    label: Contacto
+    fields:
+    - type: boolean
+      name: enable
+      label: enable
+      hidden: true
+    - type: text
+      name: title
+      label: Titulo
+    - type: text
+      name: subtitle
+      label: Subtitulo
+    - type: text
+      name: buttonText
+      label: Texto en boton
+    - type: text
+      name: email
+      label: Email
+    - type: field_group
+      name: captcha
+      label: captcha
+      hidden: true
+    - type: field_group
+      name: form
+      fields:
+      - type: field_group
+        name: name
+        label: Nombre
+        fields:
+        - type: text
+          name: text
+          label: text
+        - type: text
+          name: warning
+          label: warning
+      - type: field_group
+        name: email
+        label: Email
+        fields:
+        - type: text
+          name: text
+          label: text
+        - type: text
+          name: warning
+          label: warning
+      - type: field_group
+        name: phone
+        label: Telefono
+        fields:
+        - type: text
+          name: text
+          label: text
+        - type: text
+          name: warning
+          label: warning
+      - type: field_group
+        name: message
+        label: Mensaje
+        fields:
+        - type: text
+          name: text
+          label: text
+        - type: text
+          name: warning
+          label: warning
+      label: Mensaje
+  - type: field_group
+    name: footer
+    label: footer
+    fields:
+    - type: boolean
+      name: enable
+      label: enable
+    - type: text
+      name: copyright
+      label: copyright
+    - type: field_group_list
+      name: social
+      label: social
+      fields:
+      - type: text
+        name: icon
+        label: icon
+      - type: text
+        name: link
+        label: link
+      - type: text
+        name: title
+        label: title
+    - type: field_group_list
+      name: quicklinks
+      label: quicklinks
+      fields:
+      - type: text
+        name: text
+        label: text
+      - type: text
+        name: link
+        label: link
+    hidden: true
+- type: field_group
+  name: menu
+  label: menu
+  fields:
+  - type: field_group_list
+    name: prepend
+    label: prepend
+    fields:
+    - type: text
+      name: url
+      label: url
+    - type: text
+      name: name
+      label: name
+    - type: number
+      name: weight
+      label: weight
+  hidden: true
+pages:
+- config.toml

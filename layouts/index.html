@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}es{{ end }}">
+
+{{ partial "head.html" . }}
+
+<body id="page-top" class="index">
+  {{ partial "nav.html" . }}
+  {{ partial "heroB.html" . }}
+  {{ partial "hero.html" . }}
+
+  {{ if .Site.Params.services.enable }}
+  {{ partial "services.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.portfolio.enable }}
+  {{ partial "portfolio.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.about.enable }}
+  {{ partial "about.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.team.enable }}
+  {{ partial "team.html" . }}
+  {{ end }}
+
+  <!-- {{ if .Site.Params.clients_list.enable }}
+  {{ partial "clients.html" . }}
+  {{ end }} -->
+
+
+
+  {{ if .Site.Params.contact.enable }}
+  {{ partial "contact.html" . }}
+  {{ end }}
+
+
+  {{ if .Site.Params.footer.enable }}
+  {{ partial "footer.html" . }}
+  {{ end }}
+
+  {{ if .Site.Params.portfolio.enable }}
+  {{ partial "modals.html" . }}
+  {{ end }}
+
+  {{/*  {{ partial "js.html" . }} */}}
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5d5aa18c77aa790be32f9f8c/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>

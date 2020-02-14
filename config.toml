@@ -1,0 +1,187 @@
+baseurl = "https://www.elcastillodelaesfera.com.mx/"
+googleAnalytics = ""
+languageCode = "en-us"
+theme = "hugo-agency-theme"
+title = "El castillo de la esfera"
+[[menu.prepend]]
+
+[params]
+custom_css = []
+custom_js = []
+description = "La fabrica de esferas mas grande del mundo"
+disableFonts = false
+favicon = "favicon.ico"
+name = "Your name"
+[params.about]
+enable = true
+endpoint = "Se parte<br>de nuestra historia"
+subtitle = "“Desde 1993 fabricamos tu navidad”"
+title = "Historia y Filosofía"
+[[params.about.events]]
+date = "1993-2006"
+description = "El Castillo de la Esfera inició como un pequeño taller en 1993 con tan sólo 5 artesanos quienes eran responsables de todo el proceso de fabricación."
+img = "/images/nuestros_inicios.jpg"
+title = "Nuestros inicios"
+[[params.about.events]]
+date = 2010
+description = "En el 2010 amplía la fábrica para abrir las puertas a los turistas y dar a conocer el proceso de fabricación de sus productos."
+img = "/images/Ampliacion.jpg"
+title = "Ampliacion"
+[[params.about.events]]
+date = "2012-2018"
+description = "<ul><li>2012 Galardón internacional Excelsis - Global Quality Fundation.</li><li>2017 Mejor empresa del año-LAQI (Latin American Quality Instituted).</li><li>Participación en la Décima Annual Feria de los Moles Festival-California State Senate.</li><li>2018 Reconocimiento de Alta Calidad e Innovación.</li><ul>"
+img = "/images/premios.jpg"
+title = "Premios y Reconocimientos"
+[params.clients_list]
+center = true
+enable = true
+subtitle = "que confian en nosotros"
+title = "Nuestros amigos"
+[params.contact]
+buttonText = "Enviar mensaje"
+email = "anvisamkt@gmail.com"
+enable = true
+subtitle = "Responderemos a la brevedad"
+title = "Contáctanos!"
+[params.contact.captcha]
+[params.contact.form.email]
+text = "Tu email *"
+warning = "Email requerido"
+[params.contact.form.message]
+text = "Tu mensaje*"
+warning = "Mensaje requerido"
+[params.contact.form.name]
+text = "Tu nombre *"
+warning = "Nombre requerido"
+[params.contact.form.phone]
+text = "Tu telefono *"
+warning = "Telefono requerido"
+[params.error404]
+heading = "Page couldn't be found"
+text = "Please visit [this page](/)"
+[params.footer]
+copyright = "NotServerLess"
+enable = true
+[[params.footer.quicklinks]]
+link = "#"
+text = "Politica de privacidad"
+[[params.footer.quicklinks]]
+link = "#"
+text = "Terminos de uso"
+[[params.footer.social]]
+icon = "fa-twitter"
+link = "#"
+title = "Twitter"
+[[params.footer.social]]
+icon = "fa-facebook"
+link = "#"
+title = "Facebook"
+[[params.footer.social]]
+icon = "fa-linkedin"
+link = "#"
+title = "LinkedIn"
+[[params.hero.slide]]
+buttonText = "Saber mas..."
+image = "/images/carrusel_abuela.jpg"
+subtitle = "Set fotográfico"
+title = "Set fotográfico"
+url = "#portfolio"
+[[params.hero.slide]]
+buttonText = "Saber mas"
+image = "/images/carrusel_esfera.jpg"
+subtitle = "Visita Nuestra Fabrica"
+title = "Visita Nuestra Fabrica"
+url = "#team"
+[[params.hero.slide]]
+buttonText = "Saber mas"
+image = "/images/carrusel_muñecos.jpg"
+subtitle = "Catálogo 2019"
+title = "Catálogo 2019"
+url = "#services"
+[[params.hero.slide]]
+buttonText = "Saber mas"
+image = "/images/header-bg2.jpg"
+subtitle = "Sucursales"
+title = "Sucursales"
+url = "#team"
+[params.navigation]
+about = "Historia y Filosofía"
+brand = "El castillo de la esfera"
+contact = "Agenda tu recorrido"
+logo = "/images/logo.png"
+portfolio = "Galería"
+services = "Catalogo"
+team = "Sucursales"
+[params.portfolio]
+enable = true
+subtitle = ""
+title = "Galería"
+[params.portfolio.modal]
+buttonText = "Cerrar Imagen"
+category = "Categoria"
+date = "Fecha"
+[params.services]
+enable = true
+subtitle = ""
+title = "Catalogo"
+[[params.services.row]]
+[[params.services.row.list]]
+class = "precios"	
+description = "Si deseas comprar desde la comodidad de tu hogar, nuestro equipo de ventas puede ayudarte."	
+icon = "fa-dollar"	
+title = "Realiza tu compra a domicilio"	
+url = "https://widget.sirena.app/redirect/index.html?phone=527971132908"	
+[[params.services.row.list]]
+class = "catalogo"
+description = "Lo ultimo en esferas para esta temporada.<br>&nbsp;"
+icon = "fa-address-book-o"
+title = "Catalogo 2019"
+url = "https://drive.google.com/file/d/1p1imV-8vqI1Pf9XQzInlgPgdXyYOWYPX/preview"
+[[params.services.row.list]]
+class = "cotizacion"
+description = "Emprende tu negocio con nosotros, nuestro equipo de ventas podrá asesorarte."
+icon = "fa-archive"
+title = "Mayoreo"
+url = "javascript:void(Tawk_API.toggle())"
+[params.team]
+description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+enable = true
+subtitle = "Cada vez mas cerca de ti"
+title = "Sucursales"
+[[params.team.members]]
+img = "/uploads/congreso.png"
+name = "Congreso de la Union"
+position = "¡Ya esta abierta! <br> 8:00 am - 8:00 pm"
+social = [["fa-road", "https://www.google.com/maps/place/CASTLE+SPHERE/@19.4197412,-99.1211888,20z/data=!4m5!3m4!1s0x85d1feb8510f9935:0xa89007d7c890dc6d!8m2!3d19.4198745!4d-99.1212219"]]
+[[params.team.members]]
+img = "/uploads/misterios.png"
+name = "Misterios"
+position = "Abierta a partir de Octubre"
+social = [["fa-road", "https://www.google.com.mx/maps/place/El+Castillo+De+La+Esfera/@19.4759496,-99.1223123,19.75z/data=!4m5!3m4!1s0x85d1f974bd0b772d:0xb60ba8ab9859fb18!8m2!3d19.4761429!4d-99.1222539"]]
+[[params.team.members]]
+img = "images/team/1.jpeg"
+name = "Matriz"
+position = "Horario 8:00-19:00"
+social = [["fa-whatsapp", "https://widget.sirena.app/redirect/index.html?phone=527979711294"], ["fa-road", "https://www.google.com.mx/maps/dir/Castle+Sphere+1,+Carretera+Chignahuapan-Zacatlan+Km.2,+Teoconchila,+73300+Chignahuapan,+Pue./Castle+Sphere+1/@19.8534903,-98.0896304,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x85d06c235bd8a48f:0xd2d31fabbd425484!2m2!1d-98.01959!2d19.853504!1m5!1m1!1s0x0:0xd2d31fabbd425484!2m2!1d-98.01959!2d19.853504!3e1"]]
+[[params.team.members]]
+img = "images/team/3.jpeg"
+name = "Pista"
+position = "Horario 8:00-19:00"
+social = [["fa-whatsapp", "https://widget.sirena.app/redirect/index.html?phone=527979711294"], ["fa-road", "https://www.google.com.mx/maps/dir/El+Castillo+de+la+Esfera,+Chignahuapan,+Puebla/El+Castillo+de+la+Esfera/@19.8514073,-98.0727376,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x85d06c0f8609ff7d:0xc81ff1e9f521daf7!2m2!1d-98.0377181!2d19.85133!1m5!1m1!1s0x0:0xc81ff1e9f521daf7!2m2!1d-98.0377181!2d19.85133!3e1"]]
+[[params.team.members]]
+img = "images/team/4.jpeg"
+name = "Av. Principal"
+position = "Horario 8:00-19:00"
+social = [["fa-whatsapp", "https://widget.sirena.app/redirect/index.html?phone=527979711294"], ["fa-road", "https://www.google.com.mx/maps/dir/ANVISA,+Hermenegildo+Galeana,+Teoconchila,+73300+Chignahuapan,+Pue./ANVISA/@19.8536116,-98.05458,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x85d06c6f1bcf92c5:0xb6e5b381aaad6e53!2m2!1d-98.0195605!2d19.8535343!1m5!1m1!1s0x85d06c6f1bcf92c5:0xb6e5b381aaad6e53!2m2!1d-98.0195605!2d19.8535343!3e1"]]
+[[params.clients]]
+link = "#"
+logo = "envato.jpg"
+[[params.clients]]
+link = "#"
+logo = "designmodo.jpg"
+[[params.clients]]
+link = "#"
+logo = "themeforest.jpg"
+[[params.clients]]
+link = "#"
+logo = "creative-market.jpg"

@@ -1,0 +1,42 @@
+---
+label: Galeria
+hide_body: true
+fields:
+- type: number
+  name: modalID
+  label: modalID
+  hidden: true
+- type: text
+  name: title
+  label: Titulo
+- type: text
+  name: subtitle
+  label: Subtitulo
+- type: datetime
+  name: date
+  label: Fecha
+- name: video
+  type: text
+  config:
+    required: false
+  label: video
+- type: file
+  name: img
+  label: Imagen
+- type: file
+  name: preview
+  label: Imagen Previa
+- type: text
+  name: client
+  label: client
+  hidden: true
+- type: text
+  name: clientLink
+  label: clientLink
+  hidden: true
+- type: text
+  name: category
+  label: Categoria
+- type: textarea
+  name: description
+  label: Descripcion

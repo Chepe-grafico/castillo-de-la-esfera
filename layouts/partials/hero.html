@@ -1,0 +1,22 @@
+{{ "<!-- Hero -->" | safeHTML }}
+<header>
+  {{ range .Site.Params.hero.slide }}
+  <div class="container extraSlide" style="background-image: url({{ .image }})">
+    <div class="intro-text">
+      <div class="intro-lead-in">{{ with .title }}{{ . | markdownify }}{{ end }}</div>
+      <div class="intro-heading">{{ with .subtitle }}{{ . | markdownify }}{{ end }}</div>
+      <a href="{{ .url }}" class="page-scroll btn btn-xl">{{ with .buttonText }}{{ . }}{{ end }}</a>
+    </div>
+  </div>
+  {{ end }}
+</header>
+
+<script>
+  $('header').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    loop: true,
+    autoplaySpeed: 3750,
+  });
+</script>
